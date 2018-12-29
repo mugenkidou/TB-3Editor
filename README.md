@@ -551,11 +551,11 @@ You can set/get hidden parameters by DT1/RQ1 commands. See also [TB-3 MIDI Imple
 | 10 00 14 03 | 0000 aaaa | BENDER RANGE|0 - 17|
 | 10 00 14 04<br />10 00 14 05 | 0000 aaaa<br />0000 bbbb | PARAMETER ID (PAD MODULATION) |0 - 255|
 | 10 00 14 06<br />10 00 14 07 | 0000 aaaa<br />0000 bbbb | PARAMETER ID (EFFECT KNOB) |0 - 255|
-| 10 00 14 08<br />09 | 0000 aaaa<br />0000 bbbb | PARAMETER ID (PAD X) |0 - 255|
-| 10 00 14 0A<br />0B | 0000 aaaa<br />0000 bbbb | PARAMETER ID (PAD Y) |0 - 255|
+| 10 00 14 08<br />10 00 14 09 | 0000 aaaa<br />0000 bbbb | PARAMETER ID (PAD X) |0 - 255|
+| 10 00 14 0A<br />10 00 14 0B | 0000 aaaa<br />0000 bbbb | PARAMETER ID (PAD Y) |0 - 255|
 | 10 00 14 0C | 0000 aaaa | UNIDENTIFIED|0 - 15|
 | 10 00 14 0D | 0000 aaaa | UNIDENTIFIED|0 - 15|
-| 10 00 14 0E<br />0F | 0000 aaaa<br />0000 bbbb | ACCENT|0 - 255|
+| 10 00 14 0E<br />10 00 14 0F | 0000 aaaa<br />0000 bbbb | ACCENT|0 - 255|
 | 10 00 14 10 | 0aaa aaaa | UNIDENTIFIED|0 - 100|
 | 10 00 14 11 | 0aaa aaaa | UNIDENTIFIED|0 - 100|
 
