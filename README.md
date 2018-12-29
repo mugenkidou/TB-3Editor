@@ -559,7 +559,7 @@ You can set/get hidden parameters by DT1/RQ1 commands. See also [TB-3 MIDI Imple
 |          10 | 0aaa aaaa | UNIDENTIFIED|0 - 100|
 |          11 | 0aaa aaaa | UNIDENTIFIED|0 - 100|
 
-# (*1) Parameter IDs
+## (*1) Parameter IDs
 
 | ID    | Parameter Name                           |
 | ----- | ---------------------------------------- |
