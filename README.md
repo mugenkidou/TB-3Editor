@@ -30,12 +30,12 @@ You can set/get hidden parameters by DT1/RQ1 commands. See also [TB-3 MIDI Imple
     * [EFX1](#EFX1)
     * [EFX2](#EFX2)
 * [Parameter Assign](#Parameter-Assign)
+    * [(*1) Parameter IDs](#(*1)-Parameter-IDs)
 * [Pattern Parameters](#Pattern-Parameters)
     * [Pitch](#Pitch)
     * [Slide](#Slide)
     * [Gate](#Gate)
     * [Accent](#Accent)
-* [(*1) Parameter IDs](#(*1)-Parameter-IDs)
 
 ------
 
@@ -559,174 +559,6 @@ You can set/get hidden parameters by DT1/RQ1 commands. See also [TB-3 MIDI Imple
 |          10 | 0aaa aaaa | UNIDENTIFIED|0 - 100|
 |          11 | 0aaa aaaa | UNIDENTIFIED|0 - 100|
 
-
-
-# Pattern Parameters
-
-| Address |      | Description | Value |
-| ------- | ---- | ----------- | ----- |
-| 30 00 00 00 | 0000 000a | TRIPLET|0 - 1 (OFF, ON)|
-|          01 | 000a aaaa | PATTERN LENGTH|0 - 31|
-|          02 | 0aaa aaaa | GATE TIME|0 - 127|
-
-
-
-## Pitch
-
-| Address |      | Description | Value |
-| ------- | ---- | ----------- | ----- |
-| 30 00 02 00 | 0aaa aaaa | STEP 1 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 01 | 0aaa aaaa | STEP 2 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 02 | 0aaa aaaa | STEP 3 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 03 | 0aaa aaaa | STEP 4 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 04 | 0aaa aaaa | STEP 5 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 05 | 0aaa aaaa | STEP 6 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 06 | 0aaa aaaa | STEP 7 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 07 | 0aaa aaaa | STEP 8 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 08 | 0aaa aaaa | STEP 9 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 09 | 0aaa aaaa | STEP 10 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 0A | 0aaa aaaa | STEP 11 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 0B | 0aaa aaaa | STEP 12 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 0C | 0aaa aaaa | STEP 13 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 0D | 0aaa aaaa | STEP 14 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 0E | 0aaa aaaa | STEP 15 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 0F | 0aaa aaaa | STEP 16 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 10 | 0aaa aaaa | STEP 17 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 11 | 0aaa aaaa | STEP 18 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 12 | 0aaa aaaa | STEP 19 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 13 | 0aaa aaaa | STEP 20 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 14 | 0aaa aaaa | STEP 21 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 15 | 0aaa aaaa | STEP 22 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 16 | 0aaa aaaa | STEP 23 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 17 | 0aaa aaaa | STEP 24 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 18 | 0aaa aaaa | STEP 25 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 19 | 0aaa aaaa | STEP 26 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 1A | 0aaa aaaa | STEP 27 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 1B | 0aaa aaaa | STEP 28 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 1C | 0aaa aaaa | STEP 29 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 1D | 0aaa aaaa | STEP 30 PITCH|12 - 108 (C-2 - C7)|
-| 30 00 02 1E | 0aaa aaaa | STEP 31 PITCH|12 - 10 8(C-2 - C7)|
-| 30 00 02 1F | 0aaa aaaa | STEP 32 PITCH|12 - 108 (C-2 - C7)|
-
-
-
-## Slide
-
-| Address |      | Description | Value |
-| ------- | ---- | ----------- | ----- |
-| 30 00 04 00 | 0000 000a | STEP 1 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 01 | 0000 000a | STEP 2 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 02 | 0000 000a | STEP 3 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 03 | 0000 000a | STEP 4 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 04 | 0000 000a | STEP 5 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 05 | 0000 000a | STEP 6 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 06 | 0000 000a | STEP 7 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 07 | 0000 000a | STEP 8 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 08 | 0000 000a | STEP 9 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 09 | 0000 000a | STEP 10 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 0A | 0000 000a | STEP 11 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 0B | 0000 000a | STEP 12 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 0C | 0000 000a | STEP 13 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 0D | 0000 000a | STEP 14 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 0E | 0000 000a | STEP 15 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 0F | 0000 000a | STEP 16 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 10 | 0000 000a | STEP 17 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 11 | 0000 000a | STEP 18 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 12 | 0000 000a | STEP 19 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 13 | 0000 000a | STEP 20 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 14 | 0000 000a | STEP 21 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 15 | 0000 000a | STEP 22 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 16 | 0000 000a | STEP 23 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 17 | 0000 000a | STEP 24 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 18 | 0000 000a | STEP 25 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 19 | 0000 000a | STEP 26 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 1A | 0000 000a | STEP 27 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 1B | 0000 000a | STEP 28 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 1C | 0000 000a | STEP 29 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 1D | 0000 000a | STEP 30 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 1E | 0000 000a | STEP 31 SLIDE|0 - 1 (OFF, ON)|
-| 30 00 04 1F | 0000 000a | STEP 32 SLIDE|0 - 1 (OFF, ON)|
-
-
-
-## Gate
-
-| Address |      | Description | Value |
-| ------- | ---- | ----------- | ----- |
-| 30 00 06 00 | 0000 000a | STEP 1 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 01 | 0000 000a | STEP 2 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 02 | 0000 000a | STEP 3 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 03 | 0000 000a | STEP 4 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 04 | 0000 000a | STEP 5 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 05 | 0000 000a | STEP 6 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 06 | 0000 000a | STEP 7 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 07 | 0000 000a | STEP 8 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 08 | 0000 000a | STEP 9 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 09 | 0000 000a | STEP 10 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 0A | 0000 000a | STEP 11 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 0B | 0000 000a | STEP 12 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 0C | 0000 000a | STEP 13 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 0D | 0000 000a | STEP 14 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 0E | 0000 000a | STEP 15 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 0F | 0000 000a | STEP 16 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 10 | 0000 000a | STEP 17 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 11 | 0000 000a | STEP 18 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 12 | 0000 000a | STEP 19 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 13 | 0000 000a | STEP 20 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 14 | 0000 000a | STEP 21 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 15 | 0000 000a | STEP 22 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 16 | 0000 000a | STEP 23 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 17 | 0000 000a | STEP 24 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 18 | 0000 000a | STEP 25 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 19 | 0000 000a | STEP 26 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 1A | 0000 000a | STEP 27 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 1B | 0000 000a | STEP 28 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 1C | 0000 000a | STEP 29 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 1D | 0000 000a | STEP 30 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 1E | 0000 000a | STEP 31 GATE|0 - 1 (OFF, ON)|
-| 30 00 06 1F | 0000 000a | STEP 32 GATE|0 - 1 (OFF, ON)|
-
-
-
-## Accent
-
-| Address |      | Description | Value |
-| ------- | ---- | ----------- | ----- |
-| 30 00 08 00 | 0000 000a | STEP 1 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 01 | 0000 000a | STEP 2 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 02 | 0000 000a | STEP 3 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 03 | 0000 000a | STEP 4 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 04 | 0000 000a | STEP 5 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 05 | 0000 000a | STEP 6 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 06 | 0000 000a | STEP 7 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 07 | 0000 000a | STEP 8 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 08 | 0000 000a | STEP 9 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 09 | 0000 000a | STEP 10 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 0A | 0000 000a | STEP 11 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 0B | 0000 000a | STEP 12 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 0C | 0000 000a | STEP 13 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 0D | 0000 000a | STEP 14 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 0E | 0000 000a | STEP 15 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 0F | 0000 000a | STEP 16 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 10 | 0000 000a | STEP 17 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 11 | 0000 000a | STEP 18 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 12 | 0000 000a | STEP 19 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 13 | 0000 000a | STEP 20 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 14 | 0000 000a | STEP 21 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 15 | 0000 000a | STEP 22 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 16 | 0000 000a | STEP 23 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 17 | 0000 000a | STEP 24 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 18 | 0000 000a | STEP 25 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 19 | 0000 000a | STEP 26 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 1A | 0000 000a | STEP 27 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 1B | 0000 000a | STEP 28 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 1C | 0000 000a | STEP 29 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 1D | 0000 000a | STEP 30 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 1E | 0000 000a | STEP 31 ACCENT|0 - 1 (OFF, ON)|
-| 30 00 08 1F | 0000 000a | STEP 32 ACCENT|0 - 1 (OFF, ON)|
-
-
-
 # (*1) Parameter IDs
 
 | ID    | Parameter Name                           |
@@ -985,3 +817,170 @@ You can set/get hidden parameters by DT1/RQ1 commands. See also [TB-3 MIDI Imple
 | 0F 0B | EFX2 RV SPRING SENS                      |
 | 0F 0C | EFX2 UNIDENTIFIED                        |
 | 0F 0D | EFX2 UNIDENTIFIED                        |
+
+
+# Pattern Parameters
+
+| Address |      | Description | Value |
+| ------- | ---- | ----------- | ----- |
+| 30 00 00 00 | 0000 000a | TRIPLET|0 - 1 (OFF, ON)|
+|          01 | 000a aaaa | PATTERN LENGTH|0 - 31|
+|          02 | 0aaa aaaa | GATE TIME|0 - 127|
+
+
+
+## Pitch
+
+| Address |      | Description | Value |
+| ------- | ---- | ----------- | ----- |
+| 30 00 02 00 | 0aaa aaaa | STEP 1 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 01 | 0aaa aaaa | STEP 2 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 02 | 0aaa aaaa | STEP 3 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 03 | 0aaa aaaa | STEP 4 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 04 | 0aaa aaaa | STEP 5 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 05 | 0aaa aaaa | STEP 6 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 06 | 0aaa aaaa | STEP 7 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 07 | 0aaa aaaa | STEP 8 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 08 | 0aaa aaaa | STEP 9 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 09 | 0aaa aaaa | STEP 10 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 0A | 0aaa aaaa | STEP 11 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 0B | 0aaa aaaa | STEP 12 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 0C | 0aaa aaaa | STEP 13 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 0D | 0aaa aaaa | STEP 14 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 0E | 0aaa aaaa | STEP 15 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 0F | 0aaa aaaa | STEP 16 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 10 | 0aaa aaaa | STEP 17 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 11 | 0aaa aaaa | STEP 18 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 12 | 0aaa aaaa | STEP 19 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 13 | 0aaa aaaa | STEP 20 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 14 | 0aaa aaaa | STEP 21 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 15 | 0aaa aaaa | STEP 22 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 16 | 0aaa aaaa | STEP 23 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 17 | 0aaa aaaa | STEP 24 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 18 | 0aaa aaaa | STEP 25 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 19 | 0aaa aaaa | STEP 26 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 1A | 0aaa aaaa | STEP 27 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 1B | 0aaa aaaa | STEP 28 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 1C | 0aaa aaaa | STEP 29 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 1D | 0aaa aaaa | STEP 30 PITCH|12 - 108 (C-2 - C7)|
+| 30 00 02 1E | 0aaa aaaa | STEP 31 PITCH|12 - 10 8(C-2 - C7)|
+| 30 00 02 1F | 0aaa aaaa | STEP 32 PITCH|12 - 108 (C-2 - C7)|
+
+
+
+## Slide
+
+| Address |      | Description | Value |
+| ------- | ---- | ----------- | ----- |
+| 30 00 04 00 | 0000 000a | STEP 1 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 01 | 0000 000a | STEP 2 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 02 | 0000 000a | STEP 3 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 03 | 0000 000a | STEP 4 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 04 | 0000 000a | STEP 5 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 05 | 0000 000a | STEP 6 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 06 | 0000 000a | STEP 7 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 07 | 0000 000a | STEP 8 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 08 | 0000 000a | STEP 9 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 09 | 0000 000a | STEP 10 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 0A | 0000 000a | STEP 11 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 0B | 0000 000a | STEP 12 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 0C | 0000 000a | STEP 13 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 0D | 0000 000a | STEP 14 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 0E | 0000 000a | STEP 15 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 0F | 0000 000a | STEP 16 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 10 | 0000 000a | STEP 17 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 11 | 0000 000a | STEP 18 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 12 | 0000 000a | STEP 19 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 13 | 0000 000a | STEP 20 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 14 | 0000 000a | STEP 21 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 15 | 0000 000a | STEP 22 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 16 | 0000 000a | STEP 23 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 17 | 0000 000a | STEP 24 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 18 | 0000 000a | STEP 25 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 19 | 0000 000a | STEP 26 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 1A | 0000 000a | STEP 27 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 1B | 0000 000a | STEP 28 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 1C | 0000 000a | STEP 29 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 1D | 0000 000a | STEP 30 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 1E | 0000 000a | STEP 31 SLIDE|0 - 1 (OFF, ON)|
+| 30 00 04 1F | 0000 000a | STEP 32 SLIDE|0 - 1 (OFF, ON)|
+
+
+
+## Gate
+
+| Address |      | Description | Value |
+| ------- | ---- | ----------- | ----- |
+| 30 00 06 00 | 0000 000a | STEP 1 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 01 | 0000 000a | STEP 2 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 02 | 0000 000a | STEP 3 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 03 | 0000 000a | STEP 4 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 04 | 0000 000a | STEP 5 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 05 | 0000 000a | STEP 6 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 06 | 0000 000a | STEP 7 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 07 | 0000 000a | STEP 8 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 08 | 0000 000a | STEP 9 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 09 | 0000 000a | STEP 10 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 0A | 0000 000a | STEP 11 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 0B | 0000 000a | STEP 12 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 0C | 0000 000a | STEP 13 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 0D | 0000 000a | STEP 14 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 0E | 0000 000a | STEP 15 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 0F | 0000 000a | STEP 16 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 10 | 0000 000a | STEP 17 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 11 | 0000 000a | STEP 18 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 12 | 0000 000a | STEP 19 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 13 | 0000 000a | STEP 20 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 14 | 0000 000a | STEP 21 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 15 | 0000 000a | STEP 22 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 16 | 0000 000a | STEP 23 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 17 | 0000 000a | STEP 24 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 18 | 0000 000a | STEP 25 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 19 | 0000 000a | STEP 26 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 1A | 0000 000a | STEP 27 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 1B | 0000 000a | STEP 28 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 1C | 0000 000a | STEP 29 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 1D | 0000 000a | STEP 30 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 1E | 0000 000a | STEP 31 GATE|0 - 1 (OFF, ON)|
+| 30 00 06 1F | 0000 000a | STEP 32 GATE|0 - 1 (OFF, ON)|
+
+
+
+## Accent
+
+| Address |      | Description | Value |
+| ------- | ---- | ----------- | ----- |
+| 30 00 08 00 | 0000 000a | STEP 1 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 01 | 0000 000a | STEP 2 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 02 | 0000 000a | STEP 3 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 03 | 0000 000a | STEP 4 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 04 | 0000 000a | STEP 5 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 05 | 0000 000a | STEP 6 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 06 | 0000 000a | STEP 7 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 07 | 0000 000a | STEP 8 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 08 | 0000 000a | STEP 9 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 09 | 0000 000a | STEP 10 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 0A | 0000 000a | STEP 11 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 0B | 0000 000a | STEP 12 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 0C | 0000 000a | STEP 13 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 0D | 0000 000a | STEP 14 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 0E | 0000 000a | STEP 15 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 0F | 0000 000a | STEP 16 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 10 | 0000 000a | STEP 17 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 11 | 0000 000a | STEP 18 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 12 | 0000 000a | STEP 19 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 13 | 0000 000a | STEP 20 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 14 | 0000 000a | STEP 21 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 15 | 0000 000a | STEP 22 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 16 | 0000 000a | STEP 23 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 17 | 0000 000a | STEP 24 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 18 | 0000 000a | STEP 25 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 19 | 0000 000a | STEP 26 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 1A | 0000 000a | STEP 27 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 1B | 0000 000a | STEP 28 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 1C | 0000 000a | STEP 29 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 1D | 0000 000a | STEP 30 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 1E | 0000 000a | STEP 31 ACCENT|0 - 1 (OFF, ON)|
+| 30 00 08 1F | 0000 000a | STEP 32 ACCENT|0 - 1 (OFF, ON)|
+
+
