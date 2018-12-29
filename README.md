@@ -546,18 +546,18 @@ You can set/get hidden parameters by DT1/RQ1 commands. See also [TB-3 MIDI Imple
 | Address |      | Description | Value |
 | ------- | ---- | ----------- | ----- |
 | 10 00 14 00 | 0000 000a | PORTAMENT SW|0 - 1 (OFF, ON)|
-|          01 | 0aaa aaaa | PORTAMENT TIME|0 - 127|
-|          02 | 0000 000a | PORTAMENT MODE|0 - 1 (LEGATO, ALWAYS)|
-|          03 | 0000 aaaa | BENDER RANGE|0 - 17|
-|04<br />05 | 0000 aaaa<br />0000 bbbb | PARAMETER ID (PAD MODULATION) |0 - 255|
-|06<br />07 | 0000 aaaa<br />0000 bbbb | PARAMETER ID (EFFECT KNOB) |0 - 255|
-|          08<br />09 | 0000 aaaa<br />0000 bbbb | PARAMETER ID (PAD X) |0 - 255|
-|          0A<br />0B | 0000 aaaa<br />0000 bbbb | PARAMETER ID (PAD Y) |0 - 255|
-|          0C | 0000 aaaa | UNIDENTIFIED|0 - 15|
-|          0D | 0000 aaaa | UNIDENTIFIED|0 - 15|
-|          0E<br />0F | 0000 aaaa<br />0000 bbbb | ACCENT|0 - 255|
-|          10 | 0aaa aaaa | UNIDENTIFIED|0 - 100|
-|          11 | 0aaa aaaa | UNIDENTIFIED|0 - 100|
+| 10 00 14 01 | 0aaa aaaa | PORTAMENT TIME|0 - 127|
+| 10 00 14 02 | 0000 000a | PORTAMENT MODE|0 - 1 (LEGATO, ALWAYS)|
+| 10 00 14 03 | 0000 aaaa | BENDER RANGE|0 - 17|
+| 10 00 14 04<br />10 00 14 05 | 0000 aaaa<br />0000 bbbb | PARAMETER ID (PAD MODULATION) |0 - 255|
+| 10 00 14 06<br />10 00 14 07 | 0000 aaaa<br />0000 bbbb | PARAMETER ID (EFFECT KNOB) |0 - 255|
+| 10 00 14 08<br />09 | 0000 aaaa<br />0000 bbbb | PARAMETER ID (PAD X) |0 - 255|
+| 10 00 14 0A<br />0B | 0000 aaaa<br />0000 bbbb | PARAMETER ID (PAD Y) |0 - 255|
+| 10 00 14 0C | 0000 aaaa | UNIDENTIFIED|0 - 15|
+| 10 00 14 0D | 0000 aaaa | UNIDENTIFIED|0 - 15|
+| 10 00 14 0E<br />0F | 0000 aaaa<br />0000 bbbb | ACCENT|0 - 255|
+| 10 00 14 10 | 0aaa aaaa | UNIDENTIFIED|0 - 100|
+| 10 00 14 11 | 0aaa aaaa | UNIDENTIFIED|0 - 100|
 
 ## Parameter IDs
 
@@ -824,8 +824,8 @@ You can set/get hidden parameters by DT1/RQ1 commands. See also [TB-3 MIDI Imple
 | Address |      | Description | Value |
 | ------- | ---- | ----------- | ----- |
 | 30 00 00 00 | 0000 000a | TRIPLET|0 - 1 (OFF, ON)|
-|          01 | 000a aaaa | PATTERN LENGTH|0 - 31|
-|          02 | 0aaa aaaa | GATE TIME|0 - 127|
+| 30 00 00 01 | 000a aaaa | PATTERN LENGTH|0 - 31|
+| 30 00 00 02 | 0aaa aaaa | GATE TIME|0 - 127|
 
 
 
