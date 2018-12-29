@@ -30,7 +30,7 @@ You can set/get hidden parameters by DT1/RQ1 commands. See also [TB-3 MIDI Imple
     * [EFX1](#EFX1)
     * [EFX2](#EFX2)
 * [Parameter Assign](#Parameter-Assign)
-    * [(*1) Parameter IDs](#(*1)-Parameter-IDs)
+    * [Parameter IDs](#Parameter-IDs)
 * [Pattern Parameters](#Pattern-Parameters)
     * [Pitch](#Pitch)
     * [Slide](#Slide)
@@ -549,17 +549,17 @@ You can set/get hidden parameters by DT1/RQ1 commands. See also [TB-3 MIDI Imple
 |          01 | 0aaa aaaa | PORTAMENT TIME|0 - 127|
 |          02 | 0000 000a | PORTAMENT MODE|0 - 1 (LEGATO, ALWAYS)|
 |          03 | 0000 aaaa | BENDER RANGE|0 - 17|
-|04<br />05 | 0000 aaaa<br />0000 bbbb | PARAMETER ID (PAD MODULATION) (*1) |0 - 255|
-|06<br />07 | 0000 aaaa<br />0000 bbbb | PARAMETER ID (EFFECT KNOB) (*1) |0 - 255|
-|          08<br />09 | 0000 aaaa<br />0000 bbbb | PARAMETER ID (PAD X) (*1) |0 - 255|
-|          0A<br />0B | 0000 aaaa<br />0000 bbbb | PARAMETER ID (PAD Y) (*1) |0 - 255|
+|04<br />05 | 0000 aaaa<br />0000 bbbb | PARAMETER ID (PAD MODULATION) |0 - 255|
+|06<br />07 | 0000 aaaa<br />0000 bbbb | PARAMETER ID (EFFECT KNOB) |0 - 255|
+|          08<br />09 | 0000 aaaa<br />0000 bbbb | PARAMETER ID (PAD X) |0 - 255|
+|          0A<br />0B | 0000 aaaa<br />0000 bbbb | PARAMETER ID (PAD Y) |0 - 255|
 |          0C | 0000 aaaa | UNIDENTIFIED|0 - 15|
 |          0D | 0000 aaaa | UNIDENTIFIED|0 - 15|
 |          0E<br />0F | 0000 aaaa<br />0000 bbbb | ACCENT|0 - 255|
 |          10 | 0aaa aaaa | UNIDENTIFIED|0 - 100|
 |          11 | 0aaa aaaa | UNIDENTIFIED|0 - 100|
 
-## (*1) Parameter IDs
+## Parameter IDs
 
 | ID    | Parameter Name                           |
 | ----- | ---------------------------------------- |
