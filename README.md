@@ -149,22 +149,22 @@ You can set/get hidden parameters by DT1/RQ1 commands. See also [TB-3 MIDI Imple
 
 ## VCO
 
-| Address     |           | Description           | Value           |
-| ----------- | --------- | --------------------- | --------------- |
-| 10 00 08 00 | 0aaa aaaa | VCO SAW LEVEL         | 0 - 127         |
-| 10 00 08 01 | 0aaa aaaa | VCO SQR LEVEL         | 0 - 127         |
-| 10 00 08 02 | 0aaa aaaa | UNIDENTIFIED          | 0 - 127         |
-| 10 00 08 03 | 0aaa aaaa | UNIDENTIFIED          | 0 - 127         |
-| 10 00 08 04 | 0aaa aaaa | VCO SIN LEVEL         | 0 - 127         |
-| 10 00 08 05 | 0aaa aaaa | VCO WHITE NOISE LEVEL | 0 - 127         |
-| 10 00 08 06 | 0aaa aaaa | VCO PINK NOISE LEVEL  | 0 - 127         |
-| 10 00 08 07 | 0aaa aaaa | VCO RING LEVEL        | 0 - 127         |
-| 10 00 08 08 | 0000 000a | VCO SAW SW            | 0 - 1 (OFF, ON) |
-| 10 00 08 09 | 0000 000a | VCO SQR SW            | 0 - 1 (OFF, ON) |
-| 10 00 08 0A | 0000 000a | VCO SIN SW            | 0 - 1 (OFF, ON) |
-| 10 00 08 0B | 0000 000a | VCO WHITE NOISE SW    | 0 - 1 (OFF, ON) |
-| 10 00 08 0C | 0000 000a | VCO PINK NOISE SW     | 0 - 1 (OFF, ON) |
-| 10 00 08 0D | 0000 000a | VCO RING NOISE SW     | 0 - 1 (OFF, ON) |
+| Address     |           | Description               | Value           |
+| ----------- | --------- | ------------------------- | --------------- |
+| 10 00 08 00 | 0aaa aaaa | VCO SAW LEVEL             | 0 - 127         |
+| 10 00 08 01 | 0aaa aaaa | VCO SQR LEVEL             | 0 - 127         |
+| 10 00 08 02 | 0aaa aaaa | UNIDENTIFIED              | 0 - 127         |
+| 10 00 08 03 | 0aaa aaaa | UNIDENTIFIED              | 0 - 127         |
+| 10 00 08 04 | 0aaa aaaa | VCO SIN LEVEL             | 0 - 127         |
+| 10 00 08 05 | 0aaa aaaa | VCO WHITE NOISE LEVEL     | 0 - 127         |
+| 10 00 08 06 | 0aaa aaaa | VCO PINK NOISE LEVEL      | 0 - 127         |
+| 10 00 08 07 | 0aaa aaaa | VCO RING MODULATION LEVEL | 0 - 127         |
+| 10 00 08 08 | 0000 000a | VCO SAW SW                | 0 - 1 (OFF, ON) |
+| 10 00 08 09 | 0000 000a | VCO SQR SW                | 0 - 1 (OFF, ON) |
+| 10 00 08 0A | 0000 000a | VCO SIN SW                | 0 - 1 (OFF, ON) |
+| 10 00 08 0B | 0000 000a | VCO WHITE NOISE SW        | 0 - 1 (OFF, ON) |
+| 10 00 08 0C | 0000 000a | VCO PINK NOISE SW         | 0 - 1 (OFF, ON) |
+| 10 00 08 0D | 0000 000a | VCO RING MODULATION SW    | 0 - 1 (OFF, ON) |
 
 
 
